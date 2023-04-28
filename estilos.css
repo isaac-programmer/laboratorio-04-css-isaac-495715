@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Questão 01 */
+#questao-01 {
+    height: 300px;
+    border: 1px solid black;
+}
+
+/* Questão 02 */
+#questao-02 {
+    display: none;
+    height: 300px;
+    border: 1px solid black;
+}
+
+/* Questão 03 */
+#div-01,
+#div-02,
+#div-03,
+#div-04,
+#div-05 {
+    display: none;
+}
+
+/* Questão 04 */
+
+#paises li {
+    text-align: center;
+    padding: 10px;
+    background-color: grey;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#conteudo h1 {
+    text-align: center;
+}
+
+#conteudo p {
+    text-align: justify;
+}
+
+figure {
+    width: 200px;
+}
+
+figure {
+    border: 1px solid;
+}
+
+/* Media Queries - Questão 01 */
+
+@media screen and (min-width: 1440px) {
+    #questao-01 {
+        background-color: red;
+    }
+}
+
+@media screen and ((min-width: 1280px) and (max-width: 1439px)) {
+    #questao-01 {
+        background-color: green;
+    }
+}
+
+@media screen and ((min-width: 1024px) and (max-width: 1279px)) {
+    #questao-01 {
+        background-color: blue;
+    }
+}
+
+@media screen and ((min-width: 800px) and (max-width: 1023px)) {
+    #questao-01 {
+        background-color: saddlebrown;
+    }
+}
+
+@media screen and ((min-width: 768px) and (max-width: 799px)) {
+    #questao-01 {
+        background-color: lightyellow;
+    }
+}
+
+@media screen and ((min-width: 600px) and (max-width: 767px)) {
+    #questao-01 {
+        background-color: lightgreen;
+    }
+}
+
+@media screen and ((min-width: 480px) and (max-width: 599px)) {
+    #questao-01 {
+        background-color: lightblue;
+    }
+}
+
+@media screen and ((min-width: 320px) and (max-width: 479px)) {
+    #questao-01 {
+        background-color: black;
+    }
+}
+
+
+/* Media Queries - Questão 02 */
+
+@media screen and (min-width: 300px) {
+    #questao-02 {
+        display: block;
+        background-color: rebeccapurple;
+    }
+}
+
+
+/* Media Queries - Questão 03 e Questão 04 */
+
+/* TV */
+
+@media screen and (min-width: 1280px) {
+    #div-01,
+    #div-04 {
+        display: block;
+        height: 20vh;
+        background-color: green;
+    }
+
+    #div-02,
+    #div-05 {
+        display: block;
+        height: 20vh;
+        background-color: blue;
+    }
+
+    #div-03 {
+        display: block;
+        height: 20vh;
+        background-color: plum;
+    }
+
+
+    #container {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid black;
+    }
+
+    #paises li {
+        text-align: center;
+        padding: 10px;
+        background-color: grey;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+
+    #conteudo h1 {
+        text-align: center;
+    }
+
+    #conteudo p {
+        text-align: justify;
+    }
+
+    figure {
+        width: 200px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/* Desktop */
+
+@media screen and ((min-width: 769px) and (max-width: 1279px)) {
+    #container {
+        flex-direction: row;
+    }
+
+    figure {
+        display: none;
+    }
+}
+
+
+/* Celular e Tablet */
+
+@media screen and (max-width: 768px) {
+    #container {
+        flex-direction: column;
+    }
+
+    figure {
+        display: none;
+    }
+}
+
+
+/* Media Queries - Questão 03 e Questão 04 */
